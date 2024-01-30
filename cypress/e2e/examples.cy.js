@@ -4,7 +4,7 @@ describe('Various Automated Example', () => {
         cy.visit('/examples')
     })
 
-    it('Validate multi-page testing', () => {
+    it.only('Validate multi-page testing', () => {
         cy.getDataTest('nav-why-cypress').click();
         cy.location("pathname").should("equal","/")
 
@@ -32,7 +32,7 @@ describe('Various Automated Example', () => {
         cy.getDataTest('post-button').click()
     })
 
-    it.only('Validate grudges', () => {
+    it('Validate grudges', () => {
         cy.contains(/add some grudges/i)
         cy.getDataTest('clear-button').should('not.exist')
         cy.getDataTest('my-grudge-list').within(() => {

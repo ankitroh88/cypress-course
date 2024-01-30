@@ -6,9 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "app:run": "npm dev run",
-    "cy:run": "cypress run --spec 'cypress/e2e/fundamentals.cy.js'"
+    "lint": "next lint"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",

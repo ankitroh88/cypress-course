@@ -4,7 +4,7 @@ let url:string='https://www.linkedin.com/'
 
 describe('Typescript Demo', () => {
   
-    it('Login without custom command', () => {
+    it.only('Login without custom command', () => {
         cy.visit('https://www.linkedin.com/')
         cy.url().should('eq',url) 
     })
